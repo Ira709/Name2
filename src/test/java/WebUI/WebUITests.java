@@ -35,7 +35,7 @@ public class WebUITests {
 
     @Test
     public void AddToCart() {
-        SelenideElement item = $x("(//div class = 'inventory_item')[1]");
+        SelenideElement item = $x("//div[@class = 'inventory_item'][1]");
         item.shouldBe(visible);
 
         SelenideElement itemName = $("#item_4_title_link");
